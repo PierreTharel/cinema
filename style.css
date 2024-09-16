@@ -1,0 +1,119 @@
+html{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin : 0;
+    padding : 20px;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h1{
+    color:white;
+}
+
+h2{
+    color:black;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+  }
+  
+li a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #dddddd;
+    text-decoration: none;
+  }
+
+#cinema{
+    max-width: 600px;
+    margin : 0 auto;
+    padding : 20px;
+    background: white;
+}
+
+#ecran{
+    text-align: center;
+    font-weight: bold;
+    font-size : 15px;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin : 0 auto;
+    background: black;
+    border-radius : 10px;
+    color : white;
+}
+
+#range{
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minimax(40px,1fr));
+    gap:1Opx;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin : 1rem 0;
+}
+
+.place{
+    width: 40px;
+    height: 40px;
+    background: #cca9dd;
+    border-radius : 5px;
+    cursor: pointer;
+    margin : 0 0.2rem
+}
+
+.place.selection {
+    background: red;
+}
+  
+
+#place-selection{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#statut-message{
+    margin-top:10px;
+    text-align: center;
+}
+
+#button-reserver{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background : #b958e9;
+    color : white;
+    border: none;
+    border-radius : 5px;
+    cursor : pointer;
+}
+
+#button-reserver:hover{
+    background : red;
+}
+
+@media  screen and (max-width : 480px) {
+    #cinema {
+        padding : 10px;
+    }
+    .place{
+        width:30px;
+        height:30px;
+    }
+
+    #button-reserver{
+        padding : 8px 16px;
+    }
+}
